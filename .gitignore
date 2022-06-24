@@ -9,9 +9,6 @@ node_modules
 # testing
 /crud/coverage
 
-# production
-/crud/build
-
 # misc
 .DS_Store
 /crud/.DS_Store
