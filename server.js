@@ -3,7 +3,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const Employee = require("./model/Employee");
 
-mongoose.connect("mongodb://localhost:27017/employee");
+mongoose.connect("mongodb+srv://test:Zj1qBIOY3CDOS1zr@cluster0.wcfkpgf.mongodb.net/?retryWrites=true&w=majority");
 
 mongoose.connection.once('open', () => {
     console.log("Mongodb connection established successfully");
