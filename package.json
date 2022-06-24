@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-client": "cd crud && npm install",
+    "build": "cd crud && npm run build",
+    "heroku-postbuild": "npm run install-client && npm run build",    
+    "dev": "concurrently \"node server.js\" \"cd crud && npm start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.7"
+  }
+}

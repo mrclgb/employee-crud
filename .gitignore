@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+/crud/node_modules
+/crud/.pnp
+/crud/.pnp.js
+
+# testing
+/crud/coverage
+
+# production
+/crud/build
+
+# misc
+.DS_Store
+/crud/.DS_Store
+/crud/.env.local
+/crud/.env.development.local
+/crud/.env.test.local
+/crud/.env.production.local
+/crud/README.md
+
+/crud/npm-debug.log*
+/crud/yarn-debug.log*
+/crud/yarn-error.log*
