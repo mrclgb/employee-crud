@@ -10,9 +10,9 @@ export const createEmp = (emp) => fetch("/create", {
 });
 
 export const updateEmp = (emp, id) => fetch(`/edit/${id}`, {
+    method: "POST",
     headers: {
         "Accept": "application/json",
-        method: "POST",
         "Content-Type": "application/json"
     },
     body: JSON.stringify(emp)
