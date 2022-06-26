@@ -3,7 +3,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const Employee = require("./model/Employee");
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://test:Zj1qBIOY3CDOS1zr@cluster0.wcfkpgf.mongodb.net/?retryWrites=true&w=majority");
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://test:aaBLv0gJbjaS6ceF@cluster0.wcfkpgf.mongodb.net/?retryWrites=true&w=majority");
 
 mongoose.connection.once('open', () => {
     console.log("Mongodb connection established successfully");
@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
         } else {
             res.json(emp);
         }
-    }).then(emp => res.json(emp));
+    })
 });
 
 app.post('/create', (req, res) => {
