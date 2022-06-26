@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
         } else {
             res.json(emp);
         }
-    })
+    }).then(emp => res.json(emp));
 });
 
 app.post('/create', (req, res) => {
