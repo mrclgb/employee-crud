@@ -30,7 +30,6 @@ export const Home = () => {
                 </thead>
                 <tbody>
                     {
-                        (
                         emp.map(e => 
                             <tr key={e._id}>
                                 <td>{e.firstname}</td>
@@ -40,7 +39,6 @@ export const Home = () => {
                                 <td><Link to={`/edit/${e._id}`} className="btn btn-primary">Edit</Link></td>
                                 <td><Link to={`/delete/${e._id}`} className="btn btn-danger">Delete</Link></td>
                             </tr>    
-                        )
                         )
                     }
                 </tbody>
