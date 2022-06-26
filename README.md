@@ -1,4 +1,4 @@
-# employee-crud
+# Manage employee data
 
 A CRUD app which can:
 
